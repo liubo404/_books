@@ -1,0 +1,11 @@
+$screen: 'only screen';
+
+$portrait:  "#and (orientation: portrait)";
+$landscape: "#and (orientation: landscape)";
+
+$xsmall-screen:  "and (max-width: #{em(480)})";
+$small-screen:   "and (min-width: #{em(481)}) and (max-width: #{em(640)})";
+$medium-screen:  "and (min-width: #{em(641)}) and (max-width: #{em(1024)})";
+$large-screen:   "and (min-width: #{em(1025)}) and (max-width: #{em(1440)})";
+$xlarge-screen:  "and (min-width: #{em(1441)}) and (max-width: #{em(1920)})";
+$xxlarge-screen: "and (min-width: #{em(1921)})";

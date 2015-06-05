@@ -1,0 +1,62 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Buttons
+// - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$btn-font-weight:    $medium-font-weight;
+$btn-text-color:     $light01;
+$btn-text-alt-color: $light03;
+$btn-text-align:     center;
+
+$tiny-btn-font-size:   rem(10); // 10px
+$small-btn-font-size:  rem(12); // 12px
+$medium-btn-font-size: rem(16); // 16px
+$large-btn-font-size:  rem(20); // 20px
+
+// we use padding to determine the button sizing
+$tiny-btn:   rem(4); // 4px
+$small-btn:  rem(6); // 6px
+$medium-btn: rem(8); // 8px
+$large-btn:  rem(12); // 12px
+
+$tiny-btn-trigger:   rem(3); // 3px
+$small-btn-trigger:  rem(5); // 5px
+$medium-btn-trigger: rem(7); // 7px
+$large-btn-trigger:  rem(11); // 11px
+
+$btn-bottom-margin: rem(20); // 20px
+$btn-display: inline-block;
+
+// we use the variant % to lighten or darken elements
+$btn-hover-variant:  10%;
+$btn-border-variant: 5%;
+
+$btn-border-width: 1px;
+$btn-border-style: solid;
+
+$diasbled-btn-link-color: $aluminum;
+
+$default-btn-color:    $black;
+$default-btn-bg-color: $steel;
+$default-btn-border-color: $oil;
+$default-btn-padding: $medium-btn;
+
+$primary-btn-color:    $light01;
+$primary-btn-bg-color: $blue01;
+$primary-btn-border-color: darken($primary-btn-bg-color, $btn-border-variant);
+
+$success-btn-color:    $light01;
+$success-btn-bg-color: $green01;
+$success-btn-border-color: darken($success-btn-bg-color, $btn-border-variant);
+
+$warning-btn-color:    $light01;
+$warning-btn-bg-color: $orange01;
+$warning-btn-border-color: darken($warning-btn-bg-color, $btn-border-variant);
+
+$error-btn-color:    $light01;
+$error-btn-bg-color: $red01;
+$error-btn-border-color: darken($error-btn-bg-color, $btn-border-variant);
+
+$info-btn-color:    $white;
+$info-btn-bg-color: $light-blue01;
+$info-btn-border-color: darken($info-btn-bg, $btn-border-variant);
+

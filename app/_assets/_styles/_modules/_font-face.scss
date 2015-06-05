@@ -1,0 +1,28 @@
+@mixin font-stack($family-name, $font-path, $font-name, $font-style:normal, $font-weight:normal) {
+  @font-face {
+    font-family: '#{$family-name}';
+    src: url('#{$font-path}#{$font-name}.eot');
+    src: url('#{$font-path}#{$font-name}.eot?#iefix') format('embedded-opentype'),
+         url('#{$font-path}#{$font-name}.woff') format('woff'),
+         url('#{$font-path}#{$font-name}.ttf') format('truetype'),
+         url('#{$font-path}#{$font-name}.svg##{$font-name}') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+@mixin sans() {
+  @include font-stack($font-family, $font-path, $font-name)
+}
+
+@mixin sans-medium() {
+  @include font-stack($medium-font-weight, $font-path, $medium-font-family)
+}
+
+@mixin sans-heavy() {
+  @include font-stack($heavy-font-weight, $font-path, $heavy-font-family)
+}
+
+@include sans();
+@include sans-medium();
+@include sans-heavy();
