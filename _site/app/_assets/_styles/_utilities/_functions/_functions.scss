@@ -1,0 +1,43 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - -
+// FUNCTIONS
+// - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// variable font calculations
+// ==========================================
+$base-px: 16;
+
+@function rem-calc($value, $base: $base-px) {
+  $value: $value * ((1 / $base) + 0rem);
+  @if ($value == 0rem) { $value: 0; }
+  @return $value;
+}
+
+@function rem($px, $base: $base-px) {
+  $value: length($px);
+  @if $value == 1 {
+    @return rem-calc(nth($px, 1), $base);
+  }
+  $values: ();
+  @for $i from 1 through $value {
+    $values: append($values, rem-calc(nth($px, $i), $base));
+  }
+  @return $values;
+}
+
+@function em-calc($value, $base: $base-px) {
+  $value: $value * ((1 / $base) + 0em);
+  @if ($value == 0em) { $value: 0; }
+  @return $value;
+}
+
+@function em($px, $base: $base-px) {
+  $value: length($px);
+  @if $value == 1 {
+    @return em-calc(nth($px, 1), $base);
+  }
+  $values: ();
+  @for $i from 1 through $value {
+    $values: append($values, em-calc(nth($px, $i), $base));
+  }
+  @return $values;
+}

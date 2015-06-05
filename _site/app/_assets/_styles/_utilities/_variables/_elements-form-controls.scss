@@ -1,0 +1,55 @@
+
+$form-input-spacing: rem(16); // 16px
+
+$form-label-pointer: pointer;
+$form-label-text-color:  $dark03;
+$form-label-font-size:   rem(14); // 14px
+$form-label-font-weight: $medium-font-weight;
+$form-label-line-height: 1.5;
+$form-label-transform:   capitalize;
+$form-label-bottom-margin: 0;
+
+$input-text-color: $dark04;
+$input-font-size:  rem(14); // 14px
+$input-bg-color:   $light01;
+$input-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+
+$input-focus-bg-color:     $light02;
+$input-focus-border-color: $light05;
+
+$input-border: 1px solid $light02;
+$input-border-radius: 3px;
+
+$input-disabled-bg-color: $light07;
+$input-disabled-cursor:   $default-cursor;
+
+$fieldset-border:  1px solid $dark07;
+$fieldset-margin:  rem(18 0); // 18px 0px
+$fieldset-padding: rem(20); // 20px
+
+$legend-bg-text-color: $light01;
+$legend-font-weight:   $medium-font-weight;
+$legend-padding: rem(0 3); // 0px 3px
+
+$input-addon-bg-color:   $light02;
+$input-addon-border:     1px solid $light04;
+$input-addon-overflow:   hidden;
+$input-addon-text-color: $dark03;
+$input-addon-alt-color:  $light01;
+
+$input-number-dial: true;
+
+$input-error-text-color:     $light01;
+$input-error-alt-text-color: $dark04;
+$input-error-font-size:      rem(12); // 12px
+$input-error-font-weight:    normal;
+$input-error-font-style:     italic;
+$input-error-bg-color:       $red03;
+$input-error-padding:        rem(6 9 9); // 6px 9px 9px 9px
+$input-error-top-offset:     -1px;
+
+$input-focus-text-color: $input-focus-border-color;
+$input-focus-fade-time:  .45s;
+
+$select-bg-color:       $dark07;
+$select-hover-bg-color: $dark08;

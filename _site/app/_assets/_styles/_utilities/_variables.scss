@@ -1,0 +1,619 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - -
+// TABLE OF CONTENTS
+// - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+@import '_functions/funtions';
+// 1. Core
+// =====================
+@import 'core-palette';
+@import 'core-type';
+@import 'core-media-queries';
+// =====================
+// 2. Elements
+// =====================
+@import 'elements-buttons';
+@import 'elements-text';
+@import 'elements-form-controls';
+@import 'elements-selections';
+@import 'elements-lists';
+@import 'elements-images';
+@import 'elements-tables';
+@import 'elements-shapes';
+@import 'elements-videos';
+@import 'elements-badges';
+@import 'elements-tooltips';
+@import 'elements-highlights';
+// =====================
+// 3. Modules
+// =====================
+@import 'modules-button-groups';
+@import 'modules-forms';
+@import 'modules-switches';
+@import 'modules-dialogs';
+@import 'modules-navigation';
+@import 'modules-menus';
+@import 'modules-pickers';
+@import 'modules-indicators';
+@import 'modules-toolbars';
+// =====================
+// 4. Components
+// =====================
+@import 'components-product';
+@import 'components-product-listing';
+@import 'components-cart';
+@import 'components-gallery';
+@import 'components-content-slider';
+@import 'components-sidebars';
+
+
+$button-bar-opposite-margin: rem(10); // 10px
+$button-group-border-width:  1px;
+// - - - - - - - - - - - - - - - - - - - - - - - - - -
+// 2. COMPONENTS WITHOUT JAVASCRIPT
+// - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$cta-labels-color:       $oil;
+$cta-labels-alt-color:   $white;
+$cta-labels-font-size:   rem(11); // 11px
+$cta-labels-font-weight: $default-font-weight;
+$cta-labels-padding:     rem(4 8); // 4px 8px
+$cta-labels-border-radius: $default-border-radius;
+
+
+
+// 2.3 side navigation
+// ==========================================
+$side-nav-padding: rem(14 0); // 14px 0px
+
+$side-nav-list-type:   none;
+$side-nav-list-margin: rem(0 0 7 0); // 0px 0px 7px 0px
+$side-nav-list-position: inside;
+
+$side-nav-link-color:     $primary-color;
+$side-nav-link-font-size: rem(14); // 14px
+$side-nav-link-bg-hover-tint: rgba(0, 0, 0, .025);
+$side-nav-link-margin:  0;
+$side-nav-link-padding: rem(7 14); // 7px 14px
+
+$side-nav-active-link-color: lighten($side-nav-link-color, 30%);
+$side-nav-hover-link-color:  lighten($side-nav-link-color, 30%);
+
+$side-nav-heading-color:          $side-nav-link-color;
+$side-nav-heading-font-size:      rem(14); // 14px
+$side-nav-heading-font-weight:    $medium-font-weight;
+$side-nav-heading-text-transform: uppercase;
+
+$side-nav-divider: 1px solid lighten($white, 10%);
+
+// 2.4 - icon navigation
+// ==========================================
+$icon-menu-bg-color:     $oil;
+$icon-menu-active-color: $primary-color;
+$icon-menu-item-padding: rem(20); // 20px
+
+$icon-menu-color: $white;
+$icon-menu-font-size: rem(16); // 16px
+
+$icon-menu-hover-color:      $primary-color;
+$icon-menu-hover-font-color: $icon-menu-font-color;
+
+$icon-menu-icon-color: $white;
+$icon-menu-icon-size:  rem(30); // 30px
+$icon-menu-icon-hover-color: $icon-menu-icon-color;
+
+$icon-menu-image-width:  rem(30); // 30px
+$icon-menu-image-height: rem(30); // 30px
+
+// 2.5 - content based navigation
+// ==========================================
+$content-nav-list-margin:      rem(-4 0 18); // -4px 0px 18px 0px
+$content-nav-list-top-padding: rem(4); // 4px
+
+$content-nav-color: $iron;
+$content-nav-font-size:   rem(14); // 14px
+$content-nav-font-weight: normal;
+$content-nav-text-decoration:  none;
+$content-nav-hover-font-color: darken($content-nav-font-color, 25%);
+
+$content-nav-padding: rem(3 16); // 3px 16px
+$content-nav-border-radius: $default-border-radius;
+
+$content-nav-active-color: $white;
+$content-nav-active-font-weight: normal;
+$content-nav-active-padding: $content-nav-padding;
+$content-nav-active-cursor:  default;
+
+$content-nav-active-bg-color: $primary-color;
+$content-nav-active-hover-bg-color: darken($content-nav-active-bg-color, 14%);
+
+$content-nav-item-divider: "";
+$content-nav-item-divider-margin: rem(12); // 12px
+
+// 2.6 - breadcrumbs
+// ==========================================
+$breadcrumb-font-size:  rem(11); // 11px
+$breadcrumb-font-color: $primary-color;
+$breadcrumb-active-font-color:   $oil;
+$breadcrumb-inactive-font-color: $aluminum;
+$breadcrumb-text-transform:  uppercase;
+$breadcrumb-link-decoration: underline;
+
+$breadcrumb-bg-color: lighten($secondary-color, 55%);
+$breadcrumb-padding:  rem(9 14); // 9px 14px
+$breadcrumb-border:   1px solid darken($breadcrumb-bg-color, 10%);
+$breadcrumb-border-radius:   $default-border-radius;
+
+$breadcrumb-item-side-padding: rem(12); // 12px
+
+$breadcrumb-seporator-color: $primary-color;
+$breadcrumb-seporator: '/';
+
+// 2.7 - pagination
+// ==========================================
+$pagination-height: rem(24); // 24px
+$pagination-margin: rem(-5); // -5px
+
+$pagination-li-font-color: $onyx;
+$pagination-li-font-size:  rem(14); // 14px
+$pagination-li-margin: rem(5); // 5px
+$pagination-li-height: rem(24); // 24px
+$pagination-li-float:  left;
+
+$pagination-link-font-color: $aluminum;
+$pagination-active-link-bg:  darken($white, 10%);
+$pagination-link-padding:    rem(1 10); // 1px 10px
+
+$pagination-unavailable-link-color: $aluminum;
+$pagination-unavailable-active-link-bg:  transparent;
+$pagination-unavailable-link-cursor:     default;
+
+$pagination-current-page-link-color:  $white;
+$pagination-current-page-link-font-weight: $medium-font-weight;
+$pagination-current-page-link-bg-color:    $primary-color;
+$pagination-current-page-active-link-bg-color: $primary-color;
+$pagination-current-page-link-cursor: default;
+
+// 2.8 - lists and list items
+// ==========================================
+$list-font-size:      $default-font-size;
+$list-line-height:    $default-line-height;
+$list-style-position: inside;
+
+$list-bottom-margin: $paragraph-bottom-margin;
+$list-side-margin:   rem(18); // 18px
+$nested-list-margin: rem(20); // 20px
+$ordered-list-side-margin:   rem(22); // 22px
+$no-bullet-list-side-margin: 0;
+
+// 2.9 - definition lists
+// ==========================================
+$definition-list-margin-bottom: rem(12); // 12px
+$definition-list-header-weight: $medium-font-weight;
+$definition-list-header-bottom-margin: rem(4); // 4px
+
+// 2.10 - tables
+// ==========================================
+$table-bg-color:      $white;
+$table-bottom-margin: rem(20);
+$table-border:  1px solid $iron;
+$table-layout:  auto;
+$table-display: table-cell;
+
+$table-header-font-size:   rem(14); // 14px
+$table-header-font-color:  $onyx;
+$table-header-font-weight: $medium-font-weight;
+$table-header-bg-color:    darken($white, 20%);
+$table-header-padding:     rem(8 10 10); // 8px 10px 10px 10px
+
+$table-row-font-size:   rem(14); // 14px
+$table-row-font-color:  $onyx;
+$table-row-line-height: rem(18); // 18px
+$table-row-padding:     rem(9 10); // 9px 10px
+$table-offset-row-bg-color: darken($white, 10%);
+
+// 2.11 - product listings
+// ==========================================
+$product-listing-bg-color: $white;
+$product-listing-border:   solid 1px $iron;
+$product-listing-bottom-margin: rem(20); // 20px
+
+$product-title-color: darken($white, 15%);
+$product-title-font-size:   rem(16); // 16px
+$product-title-font-weight: $default-font-weight;
+$product-title-text-align:  center;
+$product-title-bg-color: $oil;
+$product-title-padding:  rem(15 20); // 15px 20px
+
+$product-price-color: $oil;
+$product-price-font-size:   rem(32); // 32px
+$product-price-font-weight: $default-font-weight;
+$product-price-text-align:  center;
+$product-price-bg-color: darken($white, 15%);
+$product-price-padding:  rem(15 20); // 15px 20px
+
+$product-desc-color: $steel;
+$product-desc-font-size:     rem(12); // 12px
+$product-desc-font-weight:   $default-font-weight;
+$product-desc-line-height:   1.4;
+$product-desc-text-align:    center;
+$product-desc-padding:       rem(15); // 15px
+$product-desc-bottom-border: dotted 1px darken($white, 15%);
+
+$product-item-color: $oil;
+$product-item-font-size:     rem(14); // 14px
+$product-item-font-weight:   $default-font-weight;
+$product-item-text-align:    center;
+$product-item-padding:       rem(15); // 15px
+$product-item-bottom-border: dotted 1px darken($white, 15%);
+
+$product-cta-bg-color:   $white;
+$product-cta-text-align: center;
+$product-cta-padding:    rem(20 20 0); // 20px 20px 0px
+
+// 2.12 - call-out panels
+// ==========================================
+$callout-color:      $oil;
+$callout-alt-color:  $white;
+$callout-link-color: $primary-color;
+$callout-bg-color:   darken($white, 5%);
+$callout-border:     1px solid darken($callout-bg-color, 11%);
+$callout-bottom-margin: rem(20); // 20px
+$callout-padding: rem(20); // 20px
+
+// 2.13 - inline lists
+// ==========================================
+$inline-list-top-margin:      0;
+$inline-list-opposite-margin: 0;
+$inline-list-bottom-margin:   rem(17); // 17px
+$inline-list-float-margin:    rem(-22); // -22px
+$inline-list-float-opposite-margin: rem(22); // 22px
+$inline-list-padding:       0;
+$inline-list-overflow:      hidden;
+$inline-list-display:       block;
+$inline-list-child-display: block;
+
+// 2.14 - cta labels
+// ==========================================
+$cta-labels-color:       $oil;
+$cta-labels-alt-color:   $white;
+$cta-labels-font-size:   rem(11); // 11px
+$cta-labels-font-weight: $default-font-weight;
+$cta-labels-padding:     rem(4 8); // 4px 8px
+$cta-labels-border-radius: $default-border-radius;
+
+// 2.15 - content highlighting
+// ==========================================
+$highlight-color:       $onyx;
+$highlight-alt-color:   $white;
+$highlight-font-family: "Consolas", "Menlo", "Courier", monospace;
+$highlight-font-size:   inherit;
+
+$highlight-color-pct: 7%;
+
+$highlight-bg-color: darken($white, $highlight-color-pct);
+$highlight-border:   1px solid darken($highlight-bg, $highlight-color-pct);
+$highlight-border-radius: $default-border-radius;
+
+$highlight-padding: rem(2 4 0); // 2px 4px 0px
+
+// 2.16 - toggle switches
+// ==========================================
+$toggle-positive-color: lighten($success-color, 94%);
+$toggle-negative-color: darken($white, 20%);
+$toggle-bg-color: $white;
+$toggle-border:   1px solid darken($white, 20%);
+
+$toggle-label-outline: 1px dotted $onyx;
+$toggle-bottom-margin: rem(20); // 20px
+$toggle-label-side-padding: rem(6); // 6px
+
+$tiny-toggle-height:   rem(22); // 22px
+$small-toggle-height:  rem(28); // 28px
+$medium-toggle-height: rem(36); // 36px
+$large-toggle-height:  rem(44); // 44px
+
+$tiny-toggle-font-size:   rem(11); // 11px
+$small-toggle-font-size:  rem(12); // 12px
+$medium-toggle-font-size: rem(14); // 14px
+$large-toggle-font-size:  rem(17); // 17px
+
+$toggle-trigger-bg-color:   $white;
+$toggle-trigger-fade-color: darken($toggle-trigger-bg-color,10%);
+$toggle-trigger-border:     1px solid darken($toggle-trigger-bg-color, 35%);
+$toggle-trigger-transition-speed: .1s;
+$toggle-trigger-transition-ease:  ease-out;
+
+// 2.17 - progress bar
+// ==========================================
+$progress-bar-height: rem(25); // 25px
+$progress-bar-color:  darken($white, 25%);
+
+$progress-bar-border: 1px solid lighten($white, 20%);
+$progress-bar-radius: $default-border-radius;
+
+$progress-bar-bottom-margin: rem(10); // 10px
+$progress-bar-padding: rem(2); // 2px
+
+$progress-meter-color: $primary-color;
+$progress-meter-secondary-color: $secondary-color;
+$progress-meter-success-color:   $success-color;
+$progress-meter-error-color:     $error-color;
+
+// 2.18 thumbnails
+// ==========================================
+$thumbnail-border: 4px solid $white;
+$thumbnail-border-radius:    $default-border-radius;
+$thumbnail-box-shadow:       0 0 0 1px rgba($black,.2);
+$thumbnail-box-shadow-hover: 0 0 6px 1px rgba($primary-color,0.5);
+$thumbnail-transition-speed: 200ms;
+
+// 2.19 - videos
+// ==========================================
+$video-bottom-margin:  rem(16); // 16px
+$video-top-padding:    rem(25); // 25px
+$video-bottom-padding: 67.5%;
+$video-jumbo-bottom-padding: 56.34%;
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - -
+// 3. COMPONENTS WITH JAVASCRIPT
+// - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+// 3.1 - top and off-canvas navigation
+// =====================*c=====================
+$nav-bar-color:    $white;
+$nav-bar-bg-color: $oil;
+$nav-bar-height:   rem(45); // 45px
+$nav-bar-icon-width:  $nav-bar-height;
+$nav-bar-line-height: $nav-bar-height;
+$nav-bar-mid-padding: rem(0 10);
+
+$nav-bar-right-border: solid 1px lighten($nav-bar-bg, 13%);
+$nav-bar-left-border:  solid 1px darken($nav-bar-bg, 50%);
+
+$nav-bar-header-color: $white;
+$nav-bar-header-font-weight: $medium-font-weight;
+$nav-bar-header-line-height: $nav-bar-height;
+$nav-bar-header-margin: 0;
+
+$nav-bar-menu-icon-color: $white;
+$nav-bar-menu-icon-hover-color: darken($nav-bar-menu-icon-color, 30%);
+$nav-bar-menu-icon-text-indent: rem(35); // 35px
+$nav-bar-menu-icon-width:   $nav-bar-height;
+$nav-bar-menu-icon-height:  $nav-bar-height;
+$nav-bar-menu-icon-padding: 0;
+
+$off-canvas-bg-color: $oil;
+$off-canvas-bg-hover-color: darken($nav-bar-bg, 30%);
+$off-canvas-width: rem(250); // 250px
+
+$off-canvas-label-color: $aluminum;
+$off-canvas-label-font-size:   rem(12); // 12px
+$off-canvas-label-font-weight: $medium-font-weight;
+$off-canvas-label-text-transform: uppercase;
+$off-canvas-label-bg-color: lighten($black, 20%);
+$off-canvas-label-margin:   0;
+$off-canvas-label-padding:  rem(5 15); // 5px 15px
+$off-canvas-label-top-border:     1px solid lighten($off-canvas-label-bg-color, 15%);
+$off-canvas-label-bottom-border:  none;
+
+$off-canvas-link-padding: rem(10 15); // 10px 15px
+$off-canvas-link-color:   rgba($white, .7);
+$off-canvas-link-bottom-border: 1px solid darken($off-canvas-bg-color, 25%);
+
+$off-canvas-back-bg-color:            $off-canvas-label-bg-color;
+$off-canvas-back-hover-bg-color:      darken($off-canvas-back-bg-color, -30%);
+$off-canvas-back-top-border:          $off-canvas-label-top-border;
+$off-canvas-back-bottom-border:       $off-canvas-label-bottom-border;
+$off-canvas-back-hover-top-border:    1px solid lighten($off-canvas-label-bg-color, 14%);
+$off-canvas-back-hover-bottom-border: none;
+
+$off-canvas-overlay-bg-color:       rgba($white, .2);
+$off-canvas-overlay-bg-hover-color: rgba($white, .05);
+$off-canvas-overlay-cursor:         pointer;
+$off-canvas-overlay-box-shadow:     -4px 0 4px rgba($black, .5), 4px 0 4px rgba($black, .5);
+$off-canvas-overlay-transition:     background 300ms ease;
+
+$menu-slide: 'transform 500ms ease';
+
+// 3.2 - fixed navigation
+// ==========================================
+$fixed-nav-bg-color: $white;
+$fixed-nav-padding:  0 !important;
+
+// 3.3 - carousel
+// ==========================================
+$carousel-container-bg-color: none;
+
+$carousel-caption-color:      $white;
+$carousel-caption-font-size:  rem(14); // 14px
+$carousel-caption-bg-color:   rgba(51, 51, 51, .8);
+$carousel-caption-position:   'bottom';
+$carousel-caption-padding:    rem(10 14); // 10px 14px
+$carousel-caption-height:     auto;
+
+$carousel-nav-bg-color:          transparent;
+$carousel-nav-bg-hover-color:    rgba(0, 0, 0, .3);
+$carousel-nav-arrow-color:       $white;
+$carousel-nav-arrow-hover-color: $white;
+
+$carousel-timer-bg-color: rgba(255, 255, 255, .3);
+
+$carousel-bullet-nav-color: $iron;
+$carousel-bullet-nav-color-active: $aluminum;
+$carousel-bullet-border-radius:    rem(9); // 9px
+
+$carousel-slide-number-bg-color: transparent;
+$carousel-slide-number-color:    $white;
+$carousel-slide-number-padding:  rem(5); // 5px
+
+$wrapper-class:   'slideshow-wrapper';
+$preloader-class: 'preloader';
+
+// 3.4 - content based drop-down menus
+// ==========================================
+$dropdown-color:       $midway;
+$dropdown-font-size:   rem(14); // 14px
+$dropdown-line-height: rem(18); // 18px
+$dropdown-bg-color:    $white;
+$dropdown-border-color:  $iron;
+$dropdown-divider-color: $dropdown-border-color;
+
+$dropdown-height:     auto;
+$dropdown-max-height: none;
+$dropdown-max-width:  rem(200); // 200px
+
+$dropdown-margin-base:   rem(2); // 2px
+$dropdown-top-margin:    $dropdown-margin-base;
+$dropdown-right-margin:  $dropdown-margin-base;
+$dropdown-bottom-margin: $dropdown-margin-base;
+$dropdown-left-margin:   $dropdown-margin-base;
+
+$dropdown-trigger-size:   6px;
+$dropdown-trigger-color:  $white;
+$dropdown-trigger-offset: 10px;
+
+$dropdown-list-style:   none;
+$dropdown-list-padding: rem(5 10); // 5px 10px
+$dropdown-list-hover-bg-color: $iron;
+
+$dropdown-content-padding: rem(20); // 20px
+
+$dropdown-border-radius: $default-border-radius;
+
+// 3.5 - button based drop-down menus
+// ==========================================
+$btn-menu-trigger-color:     $white;
+$btn-menu-trigger-alt-color: $oil;
+$btn-menu-active-bg-color:    rgba(0, 0, 0, .1);
+
+$tiny-btn-menu-padding:      #{$tiny-btn} * 9;
+$tiny-btn-menu-span-width:   #{$tiny-btn} * 6.5;
+$tiny-btn-menu-trigger-size: #{$tiny-btn};
+$tiny-btn-menu-trigger-top-offset:    #{$tiny-btn} * 2;
+$tiny-btn-menu-trigger-default-float: rem(-5); // -5px
+
+$small-btn-menu-padding:      #{$small-btn} * 7;
+$small-btn-menu-span-width:   #{$small-btn} * 5;
+$small-btn-menu-trigger-size: #{$small-btn};
+$small-btn-menu-trigger-top-offset:    #{$small-btn} * 1.5;
+$small-btn-menu-trigger-default-float: rem(-9); // -9px
+
+$medium-btn-menu-padding:      #{$medium-btn} * 6.4;
+$medium-btn-menu-span-width:   #{$medium-btn} * 4;
+$medium-btn-menu-trigger-size: #{$medium-btn} - rem(3);
+$medium-btn-menu-trigger-top-offset:    #{$medium-btn} * 1.5;
+$medium-btn-menu-trigger-default-float: rem(-9); // -9px
+
+$large-btn-menu-padding:      #{$large-btn} * 6;
+$large-btn-menu-span-width:   #{$large-btn} * 3.75;
+$large-btn-menu-trigger-size: #{$large-btn} - rem(6);
+$large-btn-menu-trigger-top-offset:    #{$large-btn} + rem(5);
+$large-btn-menu-trigger-default-float: rem(-9); // -9px
+
+// 3.6 - button sizes for drop-down menus
+// ==========================================
+$dropdown-menu-btn-trigger-color:     $white;
+$dropdown-menu-btn-trigger-alt-color: $oil;
+
+$tiny-dropdown-menu-btn-padding: (#{$tiny-btn-trigger} * 7);
+$tiny-dropdown-menu-btn-trigger: $tiny-btn-trigger;
+$tiny-dropdown-menu-btn-opposite-side-trigger: (#{$tiny-btn-trigger} * 3);
+$tiny-dropdown-menu-btn-tigger-top-spacing:    (-#{$tiny-btn-trigger} / 2) + rem(1);
+
+$small-dropdown-menu-btn-padding: (#{$small-btn-trigger} * 7);
+$small-dropdown-menu-btn-trigger: $small-btn-trigger;
+$small-dropdown-menu-btn-opposite-side-trigger: (#{$small-btn-trigger} * 3);
+$small-dropdown-menu-btn-trigger-top-spacing:   (-#{$small-btn-trigger} / 2) + rem(1);
+
+$medium-dropdown-menu-btn-padding: (#{$medium-btn-trigger} * 6) + rem(3);
+$medium-dropdown-menu-btn-trigger: #{$medium-btn-trigger} - rem(3);
+$medium-dropdown-menu-btn-opposite-side-trigger: (#{$medium-btn-trigger} * 2.5);
+$medium-dropdown-menu-btn-trigger-top-spacing:   (-#{$medium-btn-trigger} / 2) + rem(2);
+
+$large-dropdown-menu-btn-padding: (#{$large-btn-trigger} * 5) + rem(3);
+$large-dropdown-menu-btn-trigger: #{$large-btn-trigger} - rem(6);
+$large-dropdown-menu-btn-opposite-side-trigger: (#{$large-btn-trigger} * 2.5);
+$large-dropdown-menu-btn-trigger-top-spacing:   (-#{$large-btn-trigger} / 2) + rem(3);
+
+// 3.7 - message box
+// ==========================================
+$message-color:         $white;
+$message-alt-color:     lighten($secondary-color, 66%);
+$message-font-size:     rem(13); // 13px
+$message-font-weight:   normal;
+$message-bottom-margin: rem(20); // 20px
+$message-padding:       rem(14); // 14px
+$message-border: solid 1px darken($primary-color, 15%);
+
+$message-close-color:         $oil;
+$message-close-font-size:     rem(22); // 22px
+$message-close-padding:       rem(9 6 4); // 9px 6px 4px
+$message-close-top:           50%;
+$message-close-position:      rem(4); // 4px
+$message-close-opacity:       .3;
+$message-close-hover-opacity: .5;
+
+$message-border-radius: $default-border-radius;
+
+$message-transition-speed: 300ms;
+$message-transition-ease:  ease-out;
+
+// 3.8 -modal
+// =====================
+$modal-bg:            $white;
+$modal-overlay-bg:    rgba($black, .45);
+$modal-top-offset:    rem(100);
+$modal-default-width: 80%;
+// $modal-max-width:     $row-width;
+$modal-padding:       rem(20);
+$modal-box-shadow:    0 0 10px rgba($black,.4);
+
+$modal-close-font-size:   rem(40);
+$modal-close-top-offset:  rem(8);
+$modal-close-side-offset: rem(11);
+$modal-close-font-color:  $onyx;
+$modal-close-font-weight: $medium-font-weight;
+
+$modal-border-style: solid;
+$modal-border-width: 1px;
+$modal-border-color: $steel;
+$modal-radius:       $border-radius;
+// 3.9 - tab panels
+// ==========================================
+$tab-panel-nav-color:           $onyx;
+$tab-panel-nav-font-size:       rem(16); // 16px
+$tab-panel-nav-active-color:    $tab-panel-nav-font-color;
+$tab-panel-nav-bg-color:        $iron;
+$tab-panel-nav-active-bg-color: $white;
+$tab-panel-nav-hover-bg-color:  darken($tab-panel-nav-bg-color, 6%);
+$tab-panel-nav-padding:         rem(16); // 16px
+
+$tab-panel-content-bottom-margin: rem(24); // 24px
+$tab-panel-content-padding:       rem(5); // 5px
+
+$tab-panel-vertical-nav-bottom-margin: rem(20); // 20px
+
+// 3.10 - tip bubbles
+// ==========================================
+$tip-text-color: $oil;
+$tip-text-hover-color:   $primary-color;
+$tip-text-font-weight:   $medium-font-weight;
+$tip-text-bottom-border: dotted 1px $iron;
+$tip-text-hover-bottom-border: dotted 1px darken($primary-color, 55%);
+$tip-text-cursor-type: help;
+
+$tip-bubble-close-font-size:   rem(10);
+$tip-bubble-close-font-weight: normal;
+$tip-bubble-close-color:       $iron;
+
+$tip-bubble-color:         $white;
+$tip-bubble-font-size:     rem(14); // 14px
+$tip-bubble-font-weight:   normal;
+$tip-bubble-line-height:   1.3;
+$tip-bubble-padding:       rem(12); // 12px
+$tip-bubble-bg-color:      $oil;
+$tip-bubble-border-radius: $default-border-radius;
+$tip-bubble-trigger-size:  rem(5); // 5px
+$tip-bubble-max-width:     rem(300); // 300px
+
